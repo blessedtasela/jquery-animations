@@ -1,0 +1,27 @@
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    color: black;
+    position: fixed;
+    width: 100%;
+    border-end-end-radius: 20px;
+    border-end-start-radius: 20px;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.text{
+    padding-inline: 20px;
+}
+
+/* Styles for screens up to 1050px wide */
+@media (max-width: 1050px) {
+    .navbar {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Assignment02</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/styles.css'>
+    <script src="./js/jquery-3.7.0.min.js" defer></script>
+    <script src='./js/main.js' defer></script>
+</head>
+
+<body id="body">
+    <nav class="navbar">
+        <h3 class="text">JQuery Animations</h3>
+    </nav>
+    <main id="main-1">
+        <div id="p-content" class="m-top">Product Preview</div>
+        <div class="grid-column">
+            <div class="imgs">
+                <div class="img-main">
+                    <img id="img-product-main" src="./resources/product-images/t-shirt-black-no-model.jpg" alt="Image"
+                        class="bounce">
+                </div>
+                <div class="img-subs">
+                    <img class="img-sub" src="./resources/product-images/t-shirt-black-no-model.jpg" alt="Sub Image 1">
+                    <img class="img-sub" src="./resources/product-images/t-shirt-black-front.jpg" alt="Sub Image 2">
+                    <img class="img-sub" src="./resources/product-images/t-shirt-black-back.jpg" alt="Sub Image 3">
+                </div>
+            </div>
+            <div>
+                <form class="form" method="post" action="./js/form_submited.html" id="myForm">
+                    <div class="form-group">
+                        <input id="price-value" class="value-input no-style" type="text" value="Price: $" readonly>
+                        <div class="input-line">
+                            <label for="quantity">Quantity</label>
+                            <input name="quantity" id="quantity" type="number">
+                        </div>
+                        <input id="total-value" class="value-input no-style" type="text" value="Total: $" readonly>
+                    </div>
+                    <div class="form-group">
+                        <fieldset>
+                            <input id="color-value" class="color-value no-style" type="text" value="Color: ??" readonly>
+                            <label for="black">
+                                <input name="color" id="black" value="black" type="radio">
+                                Black</label>
+                            <label for="red">
+                                <input name="color" id="red" value="red" type="radio">
+                                Red</label>
+                            <label for="grey">
+                                <input name="color" id="grey" value="grey" type="radio">
+                                grey</label>
+                        </fieldset>
+                    </div>
+                    <div class="form-group">
+                        <fieldset>
+                            <input id="size-value" class="size-value no-style" type="text" value="Size: .." readonly>
+                            <label for="small"><input name="size" id="small" value="small" type="radio">
+                                Small</label>
+                            <label for="medium"><input name="size" id="medium" value="medium" type="radio">
+                                Medium</label>
+                            <label for="large"><input name="size" id="large" value="large" type="radio">
+                                Large</label>
+                        </fieldset>
+                    </div>
+                    <div>
+                        <input id="submit" type="submit" value="Submit" class="submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </main>
+
+    <main id="main-2">
+        <div id="p-content" class="m-top">Bike Product: LTD Race</div>
+        <div class="flex">
+            <div class="imgs">
+                <div class="img-main">
+                    <img id="img-bike-main" src="./resources/product-images-2/bike-1.jpg" alt="Image">
+                </div>
+                <div>
+                    <button id="start">Start</button>
+                    <button id="stop">Stop</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div id="popup">
+        <span id="close-popup">&times;</span>
+        <H2>Hello User, </H2>
+        <span>Instructions:</span>
+        <p>
+            To rotate the view of the bike, click on the 'Start' animation button. Stop the animation by clicking the
+            'Stop' button.
+        </p>
+    </div>
+</body>
+
+</html>
